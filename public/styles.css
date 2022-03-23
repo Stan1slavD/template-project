@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x:hidden;
+}
+
+.app{
+    display: grid;
+    height: 100vh;
+    overflow: hidden;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: max-content 1fr min-content;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    background-color: rgb(32,32,32);
+}
+
+.header{
+    background-color: rgb(18, 18, 18);
+    height: 75px;
+    grid-column: 1/3;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    padding: 4px 10px;
+    font-size: 18px;
+}
+
+.header_title{
+    font-size: 30px;
+    padding-left: 10px;
+}
+
+.header_navigation{
+    margin-left: 40px;
+    overflow: visible;
+}
+
+
+
+.header_search{
+    border-radius: 10px;
+    border-color: yellow;
+    background-color:rgb(52, 52,52);
+    height: 30px;
+    width: 100%;
+    min-width: 100px;
+    max-width: 500px;
+    margin-left: auto;
+    color:white;
+    padding: 5px;
+}
+.header_logo{
+    display: flex;
+    align-items: center;
+    min-width: 170px;
+    background-color: inherit;
+}
+
+.accordion{
+background-color: rgb(18, 18, 18);
+top: 100px; left:0px;
+min-height: 500px;
+}
+
+
+.link{
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 5px;
+    transition: all 0.5s ease;
+
+}
+
+.link:hover{
+    color: yellow;
+    border-radius: 10px;
+   /* background-color: rgb(52, 52, 52);*/
+    box-shadow: inset 0 0 0 1px yellow;
+}
+
+.footer_navigation{
+    display: flex;
+    flex-direction: column;
+}
+.info{
+    position: absolute;
+    bottom: 0;
+}
+.tags{
+    position: fixed;
+    list-style: none;
+    font-size: 18px;
+    padding: 10px;
+    z-index: 100;
+}
+
+.name{
+    color: white;
+    padding-left:30px ;
+}
+
+p{
+    margin-left:10px ;
+}
+
+.playlist-name{
+    color: white;
+    text-align: left;
+}
+
+.tag{
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.notes{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.card{
+    padding: 10px;
+    background-color: rgb(52,52,52);
+    border-radius: 10px;
+    margin-left: 10px;
+    position: relative;
+    
+}
+
+    .play_card{
+        position:absolute;
+        top: 0;
+        left:0;
+        bottom:0;
+        right:0;
+        background:rgba(255,255,255, 0.7);
+        padding:20px;
+        display:none;
+        border-radius: 10px;
+        }
+        .card:hover .play_card{
+        display:block;
+        }
+
+.play_card:hover{
+    opacity: 50%;
+}
+
+.cards{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.all{
+    font-size: 18px;
+}
+
+.secsion_cards{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
