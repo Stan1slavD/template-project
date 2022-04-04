@@ -70,6 +70,10 @@
     transition: all 0.5s ease;
 }
 
+.all {
+    margin-right: 10px;
+}
+
 .link:hover {
     color: yellow;
     border-radius: 10px;
@@ -100,19 +104,6 @@
     padding-left: 30px;
 }
 
-p {
-    margin-left: 10px;
-    color: white;
-}
-
-hr {
-    margin-top: 10px;
-}
-
-img {
-    margin-right: 10px;
-}
-
 .playlist-name {
     color: white;
     text-align: left;
@@ -126,14 +117,35 @@ img {
 .notes {
     display: flex;
     justify-content: space-between;
-    padding: 10px;
+}
+
+.playlist {
+    max-width: 100%;
+    min-width: 100%;
+}
+
+.play_img {
+    min-width: 50%;
+    max-width: 50%;
+}
+
+.icon {
+    margin-right: 10px;
+}
+
+.copyright {
+    color: white;
+    margin-left: 10px;
 }
 
 .card {
+    display: block;
     padding: 10px;
     background-color: rgb(52, 52, 52);
     border-radius: 10px;
     position: relative;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .play_card_btn {
