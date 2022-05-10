@@ -107,6 +107,7 @@
 .playlist-name {
     color: white;
     text-align: left;
+    padding-left:20px ;
 }
 
 .tag {
@@ -146,6 +147,13 @@
     position: relative;
     margin-left: 10px;
     margin-right: 10px;
+    margin-top: 10px;
+}
+
+.card:hover{
+    color: yellow;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 1px yellow;
 }
 
 .play_card_btn {
@@ -184,4 +192,41 @@
 .secsion_cards {
     margin-top: 20px;
     margin-bottom: 20px;
+}
+
+.artist_data{
+    display: flex;
+}
+
+.data{
+    display: flex;
+}
+
+.number{
+    color: yellow;
+}
+
+.data_container{
+    margin-right: 0;
+    margin-left: auto;
+}
+
+.artist_name{
+    font-size: 20px;
+    color: white;
+    font-family:'Times New Roman','Arial';
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+.play{
+    background: rgba(28,28,28,0);
+    border:none;
+}
+
+.song_artist_name{
+    font-size: 14px;
+    color: grey;
+    margin-left: 30px;
+    font-family:'Times New Roman','Arial';
 }
