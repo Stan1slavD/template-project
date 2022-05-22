@@ -222,6 +222,7 @@
 .play{
     background: rgba(28,28,28,0);
     border:none;
+    margin-top:7px ;
 }
 
 .song_artist_name{
