@@ -1,21 +1,13 @@
-import React, { useState } from "react";
-import { useEffect } from "react";
-import { useContext } from "react";
+import { useState, useContext, useEffect } from "react";
 import TopCard from "./topCard";
 import Card from "./Card";
-import { Context } from "../context";
+import { MainContext } from "../context";
 function Main() {
   const [topArtists, setTopArtists] = useState([]);
-  const { searchData, setSearchData } = useContext(Context);
-  const { searchString, setSearchString } = useContext(Context);
-
-  const [arr, setArr] = useState([]);
-  console.log("searchdata>", searchData);
-  console.log("searchstring>", searchString);
+  const { searchData } = useContext(MainContext);
 
   useEffect(() => {
     getTop();
-    console.log("GGGGGG");
   }, []);
 
   const getTopUrl =
@@ -34,7 +26,7 @@ function Main() {
     });
   }
 
-  if (searchString == "") {
+  if (searchData.length === 0) {
     return (
       <main className="content">
         <h2 className="name">Топ исполнителей: </h2>

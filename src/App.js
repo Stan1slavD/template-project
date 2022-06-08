@@ -1,20 +1,20 @@
-import React, { useEffect, useState } from 'react';
-import Aside from './components/aside';
-import { Context } from './context';
-import Main from './components/main';
-import Header from './components/header';
-
+import { useState } from "react";
+import Aside from "./components/aside";
+import { HeaderContext, MainContext } from "./context";
+import Main from "./components/main";
+import Header from "./components/header";
 function App() {
-  const [searchData, setSearchData]=useState([])
-  const [searchString, setSearchString]=useState('')
+  const [searchData, setSearchData] = useState([]);
   return (
-    <Context.Provider value={{searchData,setSearchData,searchString,setSearchString}}>
     <div className="app">
-       <Header/>
-      <Aside/>
-      <Main/>
+      <HeaderContext.Provider value={{ setSearchData }}>
+        <Header />
+      </HeaderContext.Provider>
+      <Aside />
+      <MainContext.Provider value={{ searchData }}>
+        <Main />
+      </MainContext.Provider>
     </div>
-    </Context.Provider>
   );
 }
 export default App;
